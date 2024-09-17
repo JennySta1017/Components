@@ -1,4 +1,3 @@
-import SearchButton from "./Button";
 import SearchBar from "./Searchbar";
 
 export default {
@@ -10,6 +9,5 @@ export default {
  export const Default = () => (
     <>
     < SearchBar /> 
-    < SearchButton />
     </>
 ); 

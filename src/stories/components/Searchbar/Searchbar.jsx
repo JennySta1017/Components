@@ -1,10 +1,18 @@
-import React from "react";
+import SearchButton from "./Button";
+import InputField from "./Inputfield";
+import SearchResult from "./Searchresult";
+import React, {useState} from "react";
+
 
 const SearchBar = () => {
 
+    
+
     return (
         <div>
-            <input type="text" placeholder="Sök" />
+          <InputField /> 
+          <SearchButton /> 
+          <SearchResult />
         </div>
 
     )
