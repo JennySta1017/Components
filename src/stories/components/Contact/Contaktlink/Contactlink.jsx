@@ -6,4 +6,6 @@ const ContactLink = () => {
 
         <a href="#">Kontakta oss</a>
     )
-}
+};
+
+export default ContactLink;

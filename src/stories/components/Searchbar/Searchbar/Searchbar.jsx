@@ -1,5 +1,5 @@
 import SearchButton from "../Button/Button";
-import InputField from "./Inputfield";
+import InputField from "../Inputfield/Inputfield";
 import {useState} from "react";
 
 
