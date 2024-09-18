@@ -1,4 +1,4 @@
-import SearchButton from "./Button";
+import SearchButton from "../Button/Button";
 import InputField from "./Inputfield";
 import {useState} from "react";
 
