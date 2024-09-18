@@ -1,9 +1,9 @@
 // BackButton.stories.jsx
 import React from 'react';
-import BackButton from 'TE./BackButton';
+import BackButton from './BackButton';
 
 export default {
-    title: 'Components/BackButton',
+    title: 'TE/BackButton',
     component: BackButton,
 };
 
