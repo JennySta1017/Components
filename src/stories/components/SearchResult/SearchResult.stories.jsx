@@ -1,7 +1,7 @@
 import SearchResult from "./SearchResult";
 
 export default {
-    title: 'component/SearchRes',
+    title: 'TE/SearchRes',
     component: SearchResult,
 }
 
