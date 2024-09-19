@@ -4,7 +4,10 @@ const SearchButton = () => {
 
     return (
 
-        <button>Sök</button>
+        <button 
+        type="button">
+            Sök
+        </button>
 
     )
 };

@@ -6,11 +6,16 @@ import {useState} from "react";
 const SearchBar = () => {   
 
   const [searchInput, setSearchInput] = useState('');
+  
+  const searchHandeler = (e) => {
+    setSearchInput(e.target.value);
+
+}
 
     return (
         <div>
-          <InputField /> 
-          <SearchButton onInput={setSearchInput}/> 
+          <InputField searchHandeler={searchHandeler}/> 
+          <SearchButton /> 
         </div>
 
     )

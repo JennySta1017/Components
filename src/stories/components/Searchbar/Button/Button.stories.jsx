@@ -6,6 +6,8 @@ export default {
 
 };
 
- export const Default = () => (
-    < SearchButton />
-); 
+ export const Default = () => {
+   return ( 
+   < SearchButton />
+    )
+}; 

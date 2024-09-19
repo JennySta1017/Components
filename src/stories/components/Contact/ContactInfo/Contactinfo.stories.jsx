@@ -6,6 +6,9 @@ export default {
 
 };
 
- export const Default = () => (
+ export const Default = () => {
+    
+    return (
     < ContactInfo />
-); 
+    )
+}; 

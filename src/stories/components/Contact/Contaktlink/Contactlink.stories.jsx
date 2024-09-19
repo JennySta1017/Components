@@ -6,9 +6,9 @@ export default {
     component: ContactLink,
 }
 
-export const Default = () => (
+export const Default = () => {
 
-    <ContactLink />
-
-
-);
+   return (
+     <ContactLink />
+    )
+};

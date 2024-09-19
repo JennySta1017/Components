@@ -6,8 +6,9 @@ export default {
 
 };
 
- export const Default = () => (
-    <>
-    < SearchBar /> 
-    </>
-); 
+ export const Default = () => {
+
+    return (
+    < SearchBar />  
+    )
+}; 
