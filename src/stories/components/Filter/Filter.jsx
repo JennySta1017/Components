@@ -7,8 +7,12 @@ const Filter = () => {
   return (
     <div>
       <Title />
-      <Image />
-      <Name />
+      <div>
+        <a href="#" target="_blank">
+          <Image />
+          <Name />
+        </a>
+      </div>
     </div>
   );
 };
