@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./Inputfield.module.css";
 
 const InputField = ({
     searchHandeler,
@@ -9,7 +10,8 @@ const InputField = ({
 
     return (
         <div>
-            <input 
+            <input
+            className={styles.searchinput} 
             type="text" 
             placeholder="Sök"
             value={searchInput}

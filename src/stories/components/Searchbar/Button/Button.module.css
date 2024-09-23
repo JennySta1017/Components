@@ -1,0 +1,16 @@
+
+.button {
+    background-color: #f7d08a;
+    border-color: #f7d08a;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    margin: 5px;
+    font-family: martel;
+}
+
+.button:hover {
+    background-color: #418153 ;
+    border-color: 1px solid white;
+    color: white;
+}
