@@ -1,8 +1,8 @@
 .container {
+  font-family: Martel;
   display: flex;
   flex-direction: row;
-  gap: 15px;
-  justify-content: space-center;
+  justify-content: space-between;
   align-items: center;
 }
 a {
