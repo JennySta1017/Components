@@ -2,14 +2,12 @@ import React, { useState, useEffect } from "react";
 import Title from "./Title";
 import Image from "./Image";
 import Name from "./Name";
-import MockData from "../MockData";
 import styles from "./Filter.module.css";
 
-const Filter = ({ teaData, currentId }) => {
+const Filter = ({ teaData }) => {
   const [category, setCategory] = useState([]);
 
   useEffect(() => {
-    const data = MockData();
     setCategory(teaData);
   }, []);
 

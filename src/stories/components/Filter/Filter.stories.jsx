@@ -8,7 +8,6 @@ export default {
 export const Default = {
   args: {
     title: "Filter",
-    currentId: 1,
     teaData: teaData,
   },
 };
