@@ -11,7 +11,7 @@ const BackButton = () => {
   return (
     <div>
       <h2>Gå tillbaka</h2>
-      <p>Den här knappen tar dig tillbaka till den tidigare sidan du var på</p>
+      <p>Den här knappen tar dig tillbaka till den tidigare sidan du var på.</p>
       <button onClick={handleBackClick}>
         Tillbaka
       </button>
