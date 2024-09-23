@@ -1,11 +1,11 @@
 import React from "react";
 import styles from './PopupText.module.css'
 
-const PopupText = () => {
+const PopupText = ({ title, text }) => {
     return(
         <div className={styles.contentWrapper}>
-            <h2 className={styles.title}>Title</h2>
-            <p className={styles.text}>Placeholder</p>
+            <h2 className={styles.title}>{title}</h2>
+            <p className={styles.text}>{text}</p>
         </div>
     )
 }

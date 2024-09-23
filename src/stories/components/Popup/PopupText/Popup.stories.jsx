@@ -6,5 +6,8 @@ export default {
 }
 
 export const Default = {
-    
+    args: {
+        title: 'Typ:',
+        text: "Svart te"
+    }
 }
