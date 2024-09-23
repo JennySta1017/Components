@@ -1,0 +1,7 @@
+.svg {
+    cursor: pointer;
+}
+
+.svg:hover line {
+    stroke: #F7D08A; 
+}
