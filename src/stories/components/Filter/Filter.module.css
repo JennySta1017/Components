@@ -5,3 +5,7 @@
   justify-content: space-center;
   align-items: center;
 }
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
