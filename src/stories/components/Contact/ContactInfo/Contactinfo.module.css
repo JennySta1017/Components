@@ -1,0 +1,12 @@
+.contacttext {
+    font-family: "Martel", serif;
+}
+
+.contactbox {
+    background-color: #511C29;
+    color: white;
+    padding: 20px;
+    padding-left: 65px;
+    width: 260px;
+    font-size: 18px;
+}

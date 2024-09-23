@@ -1,16 +1,16 @@
 import React from "react";
-//import { Link } from "storybook/internal/components";
+import styles from "./Contactlink.module.css";
+
 
 const ContactLink = () => {
 
 
 
     return (
-        <div>
-            {/* <Link to="/contact"> */} 
-            Kontakta oss 
-            {/* </Link>  */}
-        </div>
+           <button className= {styles.contactbutton}>
+             Kontakta oss
+           </button>      
+    
     );
 };
 
