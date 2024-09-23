@@ -1,17 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Title from "./Title";
 import Image from "./Image";
 import Name from "./Name";
+import MockData from "../MockData";
+import styles from "./Filter.module.css";
 
-const Filter = () => {
+const Filter = ({ teaData, currentId }) => {
+  const [category, setCategory] = useState([]);
+
+  useEffect(() => {
+    const data = MockData();
+    setCategory(teaData);
+  }, []);
+
+  if (!teaData || teaData.length === 0) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div>
       <Title />
-      <div>
-        <a href="#" target="_blank">
-          <Image />
-          <Name />
-        </a>
+      <div className={styles.container}>
+        {category.map((item) => (
+          <a href="#" target="_blank" key={item.id}>
+            <Image image={item.image} />
+            <Name name={item.name} />
+          </a>
+        ))}
       </div>
     </div>
   );

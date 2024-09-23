@@ -1,7 +1,8 @@
 import React from "react";
+import styles from "./Name.module.css"
 
-const Name = () => {
-  return <h5>Svart te</h5>;
+const Name = ({name}) => {
+  return <p className={styles.name}>{name}</p>;
 };
 
 export default Name;

@@ -1,7 +1,14 @@
 import Filter from "./Filter";
+import teaData from "../../../../public/api/product.json";
 export default {
   title: "TE/Filter",
   component: Filter,
 };
 
-export const Default = {};
+export const Default = {
+  args: {
+    title: "Filter",
+    currentId: 1,
+    teaData: teaData,
+  },
+};

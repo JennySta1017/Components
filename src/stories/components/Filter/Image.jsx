@@ -1,12 +1,10 @@
 import React from "react";
+import styles from "./Image.module.css";
 
-const Image = () => {
+const Image = ({ image, name }) => {
   return (
-    <div>
-      <img
-        src="https://www.alveus.eu/wp-content/uploads/020-a.jpg"
-        alt="Svart te"
-      />
+    <div className={styles.container}>
+      <img className={styles.image} src={image} alt={name} />
     </div>
   );
 };
