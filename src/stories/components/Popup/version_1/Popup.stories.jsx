@@ -1,8 +1,8 @@
 import Popup from "./Popup"
-import products from '../../../../public/api/product.json'
+import products from '../../../../../public/api/product.json'
 
 export default {
-    title: 'TE/Popup',
+    title: 'TE/Popup/version_1',
     component: Popup,
 }
 

@@ -1,7 +1,7 @@
 import ExitButton from "./ExitButton";
 
 export default {
-    title: 'TE/Popup/ExitButton',
+    title: 'TE/Popup/version_1/ExitButton',
     component: ExitButton,
 }
 

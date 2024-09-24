@@ -1,7 +1,7 @@
 import PopupText from "./PopupText";
 
 export default {
-    title: 'TE/Popup/PopupText',
+    title: 'TE/Popup/version_1/PopupText',
     component: PopupText,
 }
 

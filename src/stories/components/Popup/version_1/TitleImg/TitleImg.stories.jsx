@@ -2,7 +2,7 @@ import TitleImg from "./TitleImg";
 import teaImg from './teaPlaceholder.png'
 
 export default {
-    title: 'TE/Popup/TitleImg',
+    title: 'TE/Popup/version_1/TitleImg',
     component: TitleImg,
 }
 

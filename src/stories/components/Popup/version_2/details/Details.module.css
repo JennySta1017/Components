@@ -1,0 +1,6 @@
+.contentContainer{
+    font-family: "Martel", serif;
+    display: flex;
+    flex-direction: column;
+    gap: 61px;
+}
