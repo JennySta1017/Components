@@ -1,0 +1,27 @@
+.container {
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+}
+
+.teaGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px; 
+}
+
+.teaItem {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0px;
+    text-align: center;
+    background-color: #f9f9f9; 
+}
+
+.teaImage {
+    max-width: 100%; 
+    height: auto;
+}
+
