@@ -1,14 +1,11 @@
 [
     {
-        "title": "Typ",
-        "text": "Grönt te"
-    },
-    {
-        "title": "Koffein",
-        "text": "Lite koffein"
-    },
-    {
-        "title": "Effekt",
-        "text": "Lorem ipsum"
-    }
+        "id": 1,
+        "name": "Jasmine te",
+        "image": "https://blog.piquelife.com/wp-content/uploads/2020/08/Jasmine-Tea-Benefits-5-Research-Backed-Benefits-of-Jasmine-Tea.png",
+        "effect": "hjälper till att lugna, förbättra mental klarhet och stärka ditt immunförsvar",
+        "caffeine": "Låg koffein",
+        "type": "Grönt, svart & vitt",
+        "categoryId": 1
+      }
 ]

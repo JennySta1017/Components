@@ -1,0 +1,29 @@
+.container{
+    background-color: #511C29;
+    color: #FFFF;
+    border-radius: 20px;
+
+    display: grid;
+    grid-template-areas: 
+        "titleImg . exitBtn"
+        "titleImg details .";
+    padding: 85px 99px 99px 99px;
+    justify-content: stretch;
+    grid-template-columns: 1fr 1fr auto;
+    grid-template-rows: auto 1fr;
+    width: 939px;
+}
+
+.container > svg{
+    grid-area: exitBtn;
+    justify-self: end;
+}
+
+.container > div:nth-child(2){
+    grid-area: titleImg;
+    margin-top: 14px;
+}
+
+.container > div:last-child{
+    grid-area: details;
+}
