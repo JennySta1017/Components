@@ -1,5 +1,7 @@
 import React from "react";
-import styles from "./Contactlink.module.css";
+import styles from "../../Styles/stylebutton.module.css";
+import './Contactlink.css';
+
 
 
 const ContactLink = () => {
@@ -7,7 +9,9 @@ const ContactLink = () => {
 
 
     return (
-           <button className= {styles.contactbutton}>
+           <button 
+           id="contactbutton"
+           className= {styles.stylebutton}>
              Kontakta oss
            </button>      
     

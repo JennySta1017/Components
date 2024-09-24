@@ -1,15 +1,13 @@
-
-.button {
+.stylebutton {
     background-color: #f7d08a;
     border-color: #f7d08a;
     border-radius: 5px;
-    width: 200px;
-    height: 30px;
     margin: 5px;
     font-family: "Martel", serif;
+    font-size: 18px;
 }
 
-.button:hover {
+.stylebutton:hover {
     background-color: #418153 ;
     border-color: 1px solid white;
     color: white;

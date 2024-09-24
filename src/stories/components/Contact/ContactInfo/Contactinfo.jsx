@@ -4,14 +4,39 @@ import styles from "./Contactinfo.module.css";
 const ContactInfo = () => {
 
     return (
-    <div className={styles.contacttext}>
-        <h2>Kontakta oss</h2>
-        <p>Ring, skicka e-post eller besök oss.</p>
-        <div className={styles.contactbox}>
-        <p>E-post: heresthetea@info.se</p>
-        <p>Telefon: 08-123 123 00</p>
-        <p>Adress: Tevägen 25, 105 05 Stockholm</p>
+    <div className={styles.contactbox}>
+        <div className={styles.contact}>
+        <h2>KONTAKT</h2>
+        <p>Har du frågor? Tveka inte att kontakta oss.</p>
         </div>
+        <hr className={styles.line} />
+        <div className={styles.openhoures}>
+            <h2>Öppettider</h2>
+            <p>Vardagar: 09:00 - 18:00</p>
+            <p>Helger: 10:00 - 16:00</p>
+        </div>
+        <hr className={styles.line} />
+        <div className={styles.contactinfo}>
+            <div className={styles.email}>
+                <img 
+                src="/images/letter.png" 
+                alt="e-post" 
+                className={styles.contactimg}
+                />
+                <h3>E-post</h3>
+                <p>heresthetea@info.se</p>
+            </div>
+            <div className={styles.phonenr}>
+                <img 
+                src="/images/telephone.png" 
+                alt="telefon"
+                className={styles.contactimg} 
+                />
+                <h3>Telefon</h3>
+                <p>08-123 456 78</p>
+            </div>
+        </div>
+        
     </div>
     )
 };
