@@ -12,9 +12,21 @@ const Details = ({ productsData }) => {
 
     return(
         <div className={styles.contentContainer}>
-            <Detail label="Typ:" detail={type}/>
-            <Detail label="Koffein:" detail={caffeine}/>
-            <Detail label="Effekt:" detail={effect}/>
+            <Detail 
+                label="Typ:" 
+                detail={type}
+                // Can add styling individual styling with className
+            />
+            <Detail 
+                label="Koffein:" 
+                detail={caffeine}
+                // Can add styling individual styling with className
+            />
+            <Detail 
+                label="Effekt:" 
+                detail={effect}
+                // Can add styling individual styling with className
+            />
         </div>
     )
 }

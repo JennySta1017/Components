@@ -1,3 +1,4 @@
 import Details from "./Details";
+import Detail from "./Detail";
 
-export {Details};
+export {Details, Detail};
