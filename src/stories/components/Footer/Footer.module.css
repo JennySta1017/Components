@@ -1,50 +1,92 @@
-/* Footer.module.css */
 .footer {
-    background-color: #2f5d43; /* Dark green background */
-    color: white;
-    padding: 40px 60px; /* Increase padding for space around the footer */
-    display: flex;
-    justify-content: space-between; /* Ensure sections are spaced evenly */
-    flex-wrap: wrap; /* Make it responsive on smaller screens */
-  }
-  
-  .footerSection {
-    flex: 1;
-    margin: 0 20px;
-  }
-  
-  .footer h2 {
-    margin-bottom: 15px;
-    font-size: 18px;
-  }
-  
-  .footerSection p, .footerSection i {
-    margin-bottom: 10px;
-    font-size: 16px;
-  }
-  
-  .socialIcons {
-    display: flex;
-    gap: 20px;
-    font-size: 30px; /* Increase icon size */
-  }
-  
-  .socialIcons i {
-    cursor: pointer;
-    transition: color 0.3s ease;
-  }
-  
-  .socialIcons i:hover {
-    color: #c9c9c9; /* Lighter color on hover */
-  }
-  
-  .footerBottom {
-    flex-basis: 100%;
-    text-align: center;
-    margin-top: 30px; /* Reduce margin-top for better balance */
-    font-size: 14px;
-  }
-  
-  .footerBottom p {
-    margin: 0;
-  }
+  background-color: #2f5d43; 
+  color: white;
+  padding: 1.2rem 3.75rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.25rem;
+  align-items: start;
+  font-size: 1.155rem;
+}
+
+.footerSection h2 {
+  margin-bottom: 0.9375rem;
+  font-size: 1.331rem;
+}
+
+.footerSection p {
+  margin-bottom: 0.625rem;
+  font-size: 1.155rem;
+}
+
+.footerSectionContact {
+  margin: 0;
+  text-align: left;
+  margin-left: 8.125rem;
+}
+
+.footerSectionContact h2 {
+  margin-bottom: 0.9375rem;
+  font-size: 1.331rem;
+}
+
+.footerSectionContact p {
+  margin-bottom: 0.625rem;
+  font-size: 1.155rem;
+}
+
+.footerSectionSocial {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.footerSectionSocial h2 {
+  margin-bottom: 0.9375rem;
+  font-size: 1.331rem;
+  margin-right: 8.8rem;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.25rem;
+  font-size: 3rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socialIcons svg {
+  transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.socialIcons svg:hover {
+  color: #eea479; 
+  transform: scale(1.2); 
+}
+
+.footerBottom {
+  grid-column: span 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.25rem;
+  border-top: 1px solid #c9c9c9;
+  margin-top: 1.875rem;
+  font-size: 1.155rem;
+}
+
+.footerBottom p {
+  margin: 0;
+}
+
+.footerBottom a {
+  color: white;
+  text-decoration: none;
+  margin-left: 0.625rem;
+  font-size: 1.155rem;
+}
+
+.footerBottom a:hover {
+  text-decoration: underline;
+}
