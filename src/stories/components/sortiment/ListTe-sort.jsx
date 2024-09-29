@@ -9,12 +9,12 @@ const ListTe = ({ teas = [] }) => {
                 {teas.map(category => (
                     category.products.map((te, index) => (
                         <div className={styles.teaItem} key={index}>
-                            <h4>{te.name}</h4>
                             <img
                                 src={te.image}
                                 alt={te.name}
                                 className={styles.teaImage}
                             />
+                            <h4>{te.name}</h4> 
                         </div>
                     ))
                 ))}
@@ -24,4 +24,3 @@ const ListTe = ({ teas = [] }) => {
 };
 
 export default ListTe;
-
