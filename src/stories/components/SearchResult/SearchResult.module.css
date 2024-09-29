@@ -1,0 +1,45 @@
+.searchResultContainer {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .resultList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .resultItem {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .resultItem:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resultItem h3 {
+    margin: 0;
+    font-size: 20px; /* Större textstorlek för titeln */
+    color: #333;
+  }
+  
+  .resultItem p {
+    margin: 10px 0 0;
+    font-size: 16px; /* Större textstorlek för beskrivningen */
+    color: #666;
+  }
+  
+  .noResults {
+    font-size: 18px;
+    color: #999;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
