@@ -6,7 +6,11 @@ import TitleImg from "./TitleImg/TitleImg";
 
 const Popup = ({ productsData }) => {
 
-    const { name, image, effect, caffeine, type } = productsData;
+    if (!productsData) {
+        console.log('No existing productsData')
+    }
+    
+    const { name, image, effect, caffeine, type } = productsData || {};
 
     return(
         <div className={styles.container}>
