@@ -1,6 +1,7 @@
+import React, {useState} from "react";
 import SearchButton from "../Button/Button";
 import InputField from "../Inputfield/Inputfield";
-import {useState} from "react";
+
 
 
 const SearchBar = () => {   
