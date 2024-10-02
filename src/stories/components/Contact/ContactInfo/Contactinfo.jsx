@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./Contactinfo.module.css";
+import letterImage from "./letter.png";
+import telephoneImage from "./telephone.png";
 
 const ContactInfo = () => {
 
@@ -19,7 +21,7 @@ const ContactInfo = () => {
         <div className={styles.contactinfo}>
             <div className={styles.email}>
                 <img 
-                src="/images/letter.png" 
+                src="{letterImage}"
                 alt="e-post" 
                 className={styles.contactimg}
                 />
@@ -28,7 +30,7 @@ const ContactInfo = () => {
             </div>
             <div className={styles.phonenr}>
                 <img 
-                src="/images/telephone.png" 
+                src="{telephoneImage}" 
                 alt="telefon"
                 className={styles.contactimg} 
                 />
