@@ -13,6 +13,17 @@ const SearchBar = () => {
 
 }
 
+const getTe = () => {
+
+  if (!searchInput.current.value) {   
+    alert('Sök efter te')   // om sökfältet är tomt - alert
+    return
+  }
+
+  
+
+}
+
     return (
         <div>
           <InputField searchHandeler={searchHandeler}/> 

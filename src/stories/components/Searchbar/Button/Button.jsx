@@ -3,14 +3,15 @@ import styles from '../../Styles/stylebutton.module.css';
 import './Button.css';
 
 
-const SearchButton = () => {
+const SearchButton = ({getTe}) => {
 
     return (
 
         <button 
         id="searchbutton"
         className={styles.stylebutton}
-        type="button">
+        type="button"
+        onClick={getTe}>
             Sök
         </button>
 
