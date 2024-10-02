@@ -1,38 +1,37 @@
-import React, { useEffect, useState } from "react";
-import ListTe from "./ListTe-sort"; 
+import React, { useState, useEffect } from "react";
+import styles from "./FetchTe-sort.module.css"; 
 
-const FetchTe = () => {
-    const [teaData, setTeaData] = useState([]);
-    const [loading, setLoading] = useState(true);
+const FetchTe = ({ sortimentData }) => {
+    const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        const fetchTeas = async () => {
-            try {
-                const response = await fetch('/api/product.json'); 
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                const data = await response.json();
-                console.log("Fetched tea data:", data);
-                setTeaData(data);
-            } catch (error) {
-                console.error("Error fetching tea data:", error);
-            } finally {
-                setLoading(false);
-            }
-        };
+        
+        if (sortimentData && sortimentData.length > 0) {
+            const allProducts = sortimentData.flatMap(category => category.products);
+            setProducts(allProducts);
+        }
+    }, [sortimentData]); 
 
-        fetchTeas();
-    }, []);
+    if (!sortimentData || sortimentData.length === 0) {
+        return <div>Laddar sortiment...</div>; 
+    }
 
     return (
-        <>
-            {loading ? (
-                <p>Laddar te sorter...</p>
-            ) : (
-                <ListTe teas={teaData} /> 
-            )}
-        </>
+        <div className={styles.container}>
+            <h2 className={styles.header}>Alla te sorter</h2>
+            <div className={styles.teaGrid}>
+                {products.map((te, index) => (
+                    <div className={styles.teaItem} key={index}>
+                        <img
+                            src={te.image}
+                            alt={te.name}
+                            className={styles.teaImage}
+                        />
+                        <h4>{te.name}</h4>
+                    </div>
+                ))}
+            </div>
+        </div>
     );
 };
 
