@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Contactinfo.module.css";
 import letterImage from "./letter.png";
+import telephoneImage from "./telephone.png";
 
 const ContactInfo = () => {
 
@@ -29,7 +30,7 @@ const ContactInfo = () => {
             </div>
             <div className={styles.phonenr}>
                 <img 
-                src="/images/telephone.png" 
+                src="{telephoneImage}" 
                 alt="telefon"
                 className={styles.contactimg} 
                 />
