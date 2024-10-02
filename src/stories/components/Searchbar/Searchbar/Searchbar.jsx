@@ -3,8 +3,6 @@ import SearchButton from "../Button/Button";
 import InputField from "../Inputfield/Inputfield";
 import SearchResult from "../../SearchResult/SearchResult";
 
-
-// teData kommer att läggas in som en prop i SearchBar i stället för att ha datan här
 const SearchBar = () => {   
 
   const teaData = [
@@ -38,62 +36,56 @@ const SearchBar = () => {
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxmRhyN1GjGMoEycRZfpb9b4ahFBlH_H9Vrg",
     },
   ];
-  
 
   const [searchInput, setSearchInput] = useState('');
   const [filteredTeas, setFilteredTeas] = useState([]);
   
   const searchHandeler = (e) => {
     setSearchInput(e.target.value);
-
-}
-
-
-const handleSearchClick = () => {
-   // Kontrollera om sökfältet är tomt
-   if (!searchInput) {   
-    alert('Sök på en tesort');   
-    return;
-  }
-  // Filtrera te baserat på sökordet
-  const filtered = teaData.filter((tea) => {
-    const searchWords = searchInput.toLowerCase().split(" ");
-    const teaWords = tea.name.toLowerCase().split(" ");
-    return searchWords.some((searchWord) =>
-      teaWords.some((teaWord) => teaWord.includes(searchWord))
-    );
-  });
-
-  // Om inga resultat hittades
-  if (filtered.length === 0) {
-    alert('Inga tesorter matchade din sökning');
-    return;
   }
 
-  setFilteredTeas(filtered);
-  // Rensa sökfältet
-  setSearchInput('');
-};
+  const handleSearchClick = () => {
+    if (!searchInput) {   
+      alert('Sök på en tesort');   
+      return;
+    }
+
+    const filtered = teaData.filter((tea) => {
+      const searchWords = searchInput.toLowerCase().split(" ");
+      const teaWords = tea.name.toLowerCase().split(" ");
+      return searchWords.some((searchWord) =>
+        teaWords.some((teaWord) => teaWord.includes(searchWord))
+      );
+    });
+
+    if (filtered.length === 0) {
+      alert('Inga tesorter matchade din sökning');
+      return;
+    }
+
+    setFilteredTeas(filtered);
+    setSearchInput('');
+  };
 
 
-    return (
+  return (
+    <div>
+      <InputField searchHandeler={searchHandeler}/> 
+      <SearchButton handleSearchClick={handleSearchClick}/> 
+
+      {/* Visa "Sökresultat:" endast om en sökning har gjorts och det finns resultat */}
+      {filteredTeas.length > 0 && (
         <div>
-          <div>
-      <ul>
-        {filteredTeas.map((tea) => (
-          <li key={tea.id}>
-            <img src={tea.image} alt={tea.name} width="50" />
-            <p>{tea.name}</p>
-          </li>
-        ))}
-      </ul>
-    </div>
-          <InputField searchHandeler={searchHandeler}/> 
-          <SearchButton handleSearchClick={handleSearchClick}/> 
-          <SearchResult />
+          <p style={{ textAlign: 'center', fontSize: '1.2rem', fontWeight: 'normal', marginBottom: '20px' }}>
+            Sökresultat:
+          </p>
         </div>
+      )}
 
-    )
+      {/* Visa SearchResult-komponenten */}
+      <SearchResult results={filteredTeas.length > 0 ? filteredTeas : teaData} />
+    </div>
+  )
 };
 
 export default SearchBar;
