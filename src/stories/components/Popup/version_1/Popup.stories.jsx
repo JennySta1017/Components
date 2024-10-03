@@ -10,6 +10,6 @@ const product = products[0].products[0];
 
 export const Default = {
     args: {
-        productsData: product,
+        productData: product,
     }
 }

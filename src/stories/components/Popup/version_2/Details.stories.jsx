@@ -1,5 +1,5 @@
 import Details from "./Details";
-import products from '../../../../../../public/api/product.json'
+import products from '../../../../../public/api/product.json'
 
 export default {
     title: 'TE/Popup/version_2/Details',
