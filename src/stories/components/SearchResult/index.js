@@ -1,3 +1,3 @@
-import SearchResult from "./SearchResult";
+import SearchResult from "./SearchResult.jsx";
 
 export {SearchResult};
