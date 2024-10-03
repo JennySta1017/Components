@@ -13,8 +13,14 @@
     justify-items: center;
 }
 
+.teaImage:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
 .teaItem {
     text-align: center;
+    cursor: pointer;  
 }
 
 .teaImage {
@@ -23,4 +29,5 @@
     object-fit: cover; 
     border-radius: 5px; 
     border: none; 
+    cursor: pointer;  
 }
