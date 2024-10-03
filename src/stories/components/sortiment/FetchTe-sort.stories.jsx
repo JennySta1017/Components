@@ -5,7 +5,7 @@ export default {
     component: FetchTe,
 }
 
-const sortimentData = []/*
+const sortimentData = [
     {
       "id": 1,
       "name": "Grönt te",
@@ -178,7 +178,7 @@ const sortimentData = []/*
     }
   ];
 
-  */
+  
 
 export const Default = () => {
     return( 
