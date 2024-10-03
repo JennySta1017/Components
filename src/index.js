@@ -8,6 +8,6 @@ import { Popup } from "./stories/components/Popup/version_1";
 import { SearchBar } from "./stories/components/Searchbar/Searchbar";
 import { SearchResult } from "./stories/components/SearchResult";
 import { FetchTe } from "./stories/components/sortiment";
-import {Header} from "./stories/components/Header/Header"
+import {Header} from "./stories/components/Header";
 
-export {/*BackButton*/Header, ContactInfo, ContactLink, Filter, Footer, ShowImages, Popup, SearchBar, SearchResult, FetchTe};
+export {Header, ContactInfo, ContactLink, Filter, Footer, ShowImages, Popup, SearchBar, SearchResult, FetchTe};
