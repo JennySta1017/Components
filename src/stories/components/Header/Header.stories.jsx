@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Header from './Header';
 
 export default {
@@ -6,4 +7,11 @@ export default {
   component: Header,
 };
 
-export const DefaultHeader = () => <Header />;
+
+
+export const DefaultHeader = () => 
+(
+<Router>
+<Header />;
+</Router>
+);
