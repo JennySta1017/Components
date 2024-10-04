@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import SearchButton from "../Button/Button";
 import InputField from "../Inputfield/Inputfield";
 import SearchResult from "../../SearchResult/SearchResult";
@@ -44,6 +44,11 @@ const SearchBar = () => {
     setSearchInput(e.target.value);
   }
 
+  // Logga värdet när det faktiskt uppdateras
+useEffect(() => {
+  console.log({ searchInput });
+}, [searchInput]);
+
   const handleSearchClick = () => {
     if (!searchInput) {   
       alert('Sök på en tesort');   
@@ -70,7 +75,10 @@ const SearchBar = () => {
 
   return (
     <div>
-      <InputField searchHandeler={searchHandeler}/> 
+      <InputField 
+      searchHandeler={searchHandeler}
+      searchInput={searchInput}
+      /> 
       <SearchButton handleSearchClick={handleSearchClick}/> 
 
       {/* Visa "Sökresultat:" endast om en sökning har gjorts och det finns resultat */}
