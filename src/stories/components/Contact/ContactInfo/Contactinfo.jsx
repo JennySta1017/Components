@@ -21,7 +21,7 @@ const ContactInfo = () => {
         <div className={styles.contactinfo}>
             <div className={styles.email}>
                 <img 
-                src="{letterImage}"
+                src={letterImage}
                 alt="e-post" 
                 className={styles.contactimg}
                 />
@@ -30,7 +30,7 @@ const ContactInfo = () => {
             </div>
             <div className={styles.phonenr}>
                 <img 
-                src="{telephoneImage}" 
+                src={telephoneImage} 
                 alt="telefon"
                 className={styles.contactimg} 
                 />
