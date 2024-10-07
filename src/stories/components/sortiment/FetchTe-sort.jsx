@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./FetchTe-sort.module.css";
+import teFallback from "./te-fallback.jpg";
 
 const FetchTe = ({ sortimentData }) => {
     const [products, setProducts] = useState([]);
@@ -33,12 +34,16 @@ const FetchTe = ({ sortimentData }) => {
             <div className={styles.teaGrid}>
                 {products.map((te, index) => (
                     <div className={styles.teaItem} key={index}>
+                        {te.image ? (
                         <img
-                            src={te.image}
+                            src={te.image || {teFallback}}
                             alt={te.name}
                             className={styles.teaImage}
                             onClick={() => handleClick(te.id)}
                         />
+                        ) : (
+                            <p>Bild saknas</p>
+                        )}
                         <h4 onClick={() => handleClick(te.id)}>{te.name}</h4> 
                     </div>
                 ))}
