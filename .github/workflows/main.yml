@@ -1,0 +1,27 @@
+name: deploy-components-to-stage
+on: 
+  push: 
+    branches: 
+      - main
+    paths: 
+      - 'package.json'
+jobs:
+  deploy-to-stage: 
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          registry-url: 'https://registry.npmjs.org/'
+    
+      - name: check for verison change
+        id: version_changed
+        uses: EndBug/version-check@v2
+        with: 
+          token: ${{ secrets.GITHUB_TOKEN }}
+          diff-search: true 
