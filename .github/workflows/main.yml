@@ -25,3 +25,10 @@ jobs:
         with: 
           token: ${{ secrets.GITHUB_TOKEN }}
           diff-search: true 
+
+      - name: discord
+        uses: sebastianpopp/discord-action@releases/v2
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          message: ${{ github.actor }} lyckad push till main
+        
