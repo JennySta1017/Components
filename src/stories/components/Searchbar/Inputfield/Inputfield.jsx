@@ -6,9 +6,6 @@ const InputField = ({
     searchInput
 }) => {
 
-    
-    
-
     return (
         <div>
             <input

@@ -32,7 +32,7 @@ useEffect(() => {
     }
 
     setFilteredTeas(filtered);
-    setSearchInput('');
+    setSearchInput("");
   };
 
 
