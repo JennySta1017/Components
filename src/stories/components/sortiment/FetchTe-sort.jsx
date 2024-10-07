@@ -36,13 +36,17 @@ const FetchTe = ({ sortimentData }) => {
                     <div className={styles.teaItem} key={index}>
                         {te.image ? (
                         <img
-                            src={te.image || {teFallback}}
+                            src={te.image}
                             alt={te.name}
                             className={styles.teaImage}
                             onClick={() => handleClick(te.id)}
                         />
                         ) : (
-                            <p>Bild saknas</p>
+                            <img
+                                src={teFallback}
+                                alt="Bild saknas"
+                                className={styles.teaImage}
+                            />
                         )}
                         <h4 onClick={() => handleClick(te.id)}>{te.name}</h4> 
                     </div>
