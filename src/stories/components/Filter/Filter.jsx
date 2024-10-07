@@ -5,22 +5,16 @@ import Name from "./Name";
 import styles from "./Filter.module.css";
 
 const Filter = ({ teaData }) => {
-  const [category, setCategory] = useState([]);
-
-  useEffect(() => {
-    setCategory(teaData);
-  }, []);
-
   if (!teaData || teaData.length === 0) {
     return <div>Loading...</div>;
   }
 
   return (
-    <div>
+    <div className={styles.filter}>
       <Title />
       <div className={styles.container}>
-        {category.map((item) => (
-          <a href="#" target="_blank" key={item.id}>
+        {teaData.map((item) => (
+          <a href="#" target="_blank" key={item.id} className={styles.link}>
             <Image image={item.image} />
             <Name name={item.name} />
           </a>

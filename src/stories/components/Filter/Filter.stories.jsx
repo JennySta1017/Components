@@ -7,7 +7,6 @@ export default {
 
 export const Default = {
   args: {
-    title: "Filter",
     teaData: teaData,
   },
 };

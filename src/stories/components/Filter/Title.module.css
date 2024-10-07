@@ -3,3 +3,16 @@
   font-size: 34px;
   font-weight: bold;
 }
+/* For smaller screens (up to 768px wide) */
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+}
+
+/* For smaller screens (up to 375px wide) */
+@media (max-width: 375px) {
+  .name {
+    font-size: 14px;
+  }
+}
