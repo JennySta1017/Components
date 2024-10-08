@@ -1,9 +1,10 @@
 
 .searchinput {
     width: 60%;
-    height: 30px;
+    height: 40px;
     border: 1px solid gray; 
     border-radius: 5px;
     padding-left: 10px;
+    margin-left: 20px;
 
 }
