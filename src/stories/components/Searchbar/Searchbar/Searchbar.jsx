@@ -44,7 +44,7 @@ useEffect(() => {
       {/* Visa "Sökresultat:" endast om en sökning har gjorts och det finns resultat */}
       {filteredTeas.length > 0 && (
         <div>
-          <p className={styles.title}>Sökresultat:</p>
+          <p>Sökresultat:</p>
         </div>
       )}
 

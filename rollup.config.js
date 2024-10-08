@@ -56,6 +56,9 @@ export default {
     }),
   ],
   external: [
+    'react', 
+    'react-dom', 
+    'react-router-dom',
     ...Object.keys(pkg.peerDependencies || {}), // Externalize peerDependencies
     "@fortawesome/free-brands-svg-icons", // Externalize FontAwesome icons
     "react-router-dom", // Externalize react-router-dom
