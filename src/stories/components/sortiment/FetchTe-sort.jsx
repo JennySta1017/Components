@@ -38,7 +38,7 @@ const FetchTe = ({ sortimentData }) => {
         ))}
       </div>
       {showPopup && (
-        <Popup productsData={selectedTea} onClose={handleClosePopup} />
+        <Popup productData={selectedTea} onClose={handleClosePopup} />
       )}
     </div>
   );
