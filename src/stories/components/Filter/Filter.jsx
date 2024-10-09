@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Title from "./Title";
 import Image from "./Image";
 import Name from "./Name";
@@ -9,13 +9,15 @@ const Filter = ({ teaData }) => {
     return <div>Loading...</div>;
   }
 
+  console.log(teaData);
+
   return (
     <div className={styles.filter}>
       <Title />
       <div className={styles.container}>
         {teaData.map((item) => (
           <a href="#" target="_blank" key={item.id} className={styles.link}>
-            <Image image={item.image} />
+            <Image image={item.image} name={item.name} />
             <Name name={item.name} />
           </a>
         ))}
