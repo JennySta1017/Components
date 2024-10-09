@@ -1,33 +1,51 @@
 .container {
-    padding: 20px;
+  padding: 20px;
 }
 
 .header {
-    text-align: center;
+  text-align: center;
+  font-family: Martel;
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .teaGrid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); 
-    gap: 20px; 
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  justify-items: center;
 }
 
 .teaImage:hover {
-    transform: scale(1.1); 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .teaItem {
-    text-align: center;
-    cursor: pointer;  
+  text-align: center;
+  cursor: pointer;
 }
 
 .teaImage {
-    width: 150px;
-    height: 150px; 
-    object-fit: cover; 
-    border-radius: 5px; 
-    border: none; 
-    cursor: pointer;  
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* For smaller screens (up to 768px wide) */
+@media (max-width: 768px) {
+  .teaGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .header {
+    font-size: 24px;
+  }
 }

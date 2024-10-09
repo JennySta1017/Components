@@ -2,7 +2,10 @@
   font-family: Martel;
   font-size: 34px;
   font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
 }
+
 /* For smaller screens (up to 768px wide) */
 @media (max-width: 768px) {
   .title {
