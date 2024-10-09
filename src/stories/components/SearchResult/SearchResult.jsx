@@ -3,9 +3,7 @@ import styles from './SearchResult.module.css';
 
 
 const SearchResult = ({ results }) => {
-  if (!results || results.length === 0) {
-    return <p>No result found</p>; 
-  }
+  
   return (
     <div>
       <div className={styles.resultContainer}>
