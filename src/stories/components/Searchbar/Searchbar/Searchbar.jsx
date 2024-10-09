@@ -43,7 +43,7 @@ const SearchBar = ({ teaData }) => {
 
       {/* Visa "Sökresultat:" endast om en sökning har gjorts och det finns resultat */}
       {filteredTeas.length > 0 && (
-        <div>
+        <div className={styles.searchHeader}>
           <p>Sökresultat:</p>
         </div>
       )}

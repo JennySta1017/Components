@@ -2,3 +2,11 @@
   padding-bottom: 5px;
   border-bottom: 1px solid black;
 }
+
+.searchHeader {
+  font-family: Martel;
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
