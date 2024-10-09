@@ -1,24 +1,25 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import SearchButton from "../Button/Button";
 import InputField from "../Inputfield/Inputfield";
 import SearchResult from "../../SearchResult/SearchResult";
+import styles from "./Searchbar.module.css";
 
-const SearchBar = ({teaData}) => {   
-  const [searchInput, setSearchInput] = useState('');
+const SearchBar = ({ teaData }) => {
+  const [searchInput, setSearchInput] = useState("");
   const [filteredTeas, setFilteredTeas] = useState([]);
-  
+
   const searchHandeler = (e) => {
     setSearchInput(e.target.value);
-  }
+  };
 
   // Logga värdet när det faktiskt uppdateras
-useEffect(() => {
-  console.log({ searchInput });
-}, [searchInput]);
+  useEffect(() => {
+    console.log({ searchInput });
+  }, [searchInput]);
 
   const handleSearchClick = () => {
-    if (!searchInput) {   
-      alert('Sök på en tesort');   
+    if (!searchInput) {
+      alert("Sök på en tesort");
       return;
     }
 
@@ -27,7 +28,7 @@ useEffect(() => {
     });
 
     if (filtered.length === 0) {
-      alert('Inga tesorter matchade din sökning');
+      alert("Inga tesorter matchade din sökning");
       return;
     }
 
@@ -35,9 +36,8 @@ useEffect(() => {
     setSearchInput("");
   };
 
-
   return (
-    <div>
+    <div className={styles.container}>
       <InputField searchHandeler={searchHandeler} searchInput={searchInput} />
       <SearchButton handleSearchClick={handleSearchClick} />
 
