@@ -16,10 +16,10 @@ const Filter = ({ teaData }) => {
       <Title />
       <div className={styles.container}>
         {teaData.map((item) => (
-          <a href="#" target="_blank" key={item.id} className={styles.link}>
+          <div key={item.id} className={styles.details}>
             <Image image={item.image} name={item.name} />
             <Name name={item.name} />
-          </a>
+          </div>
         ))}
       </div>
     </div>
