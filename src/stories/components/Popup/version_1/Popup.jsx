@@ -4,7 +4,7 @@ import PopupText from "./PopupText/PopupText";
 import ExitButton from "./ExitButton/ExitButton";
 import TitleImg from "./TitleImg/TitleImg";
 
-const Popup = ({ productData, exitBtnHandler }) => {
+const Popup = ({ productData, onClose }) => {
 
     if (!productData) {
         console.error('No existing productsData')
@@ -14,7 +14,7 @@ const Popup = ({ productData, exitBtnHandler }) => {
 
     return(
         <div className={styles.container}>
-            <ExitButton onClick={exitBtnHandler} />
+            <ExitButton onClick={onClose} />
             <TitleImg title={name} img={image} />
             <PopupText 
                 type={type}
