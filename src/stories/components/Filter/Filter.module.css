@@ -1,5 +1,7 @@
 .filter {
   margin: auto 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
 }
 
 .container {
